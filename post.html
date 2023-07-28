@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap y Fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Instagram Photo Feed With Bootstrap</title>
+</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <!--Navbar-->
+<nav class="navbar fixed-top navbar-light bg-light">
+    <span class="navbar-brand mb-0 ml-5 h1"><i class="fab fa-instagram"></i> Instagram</span>
+        <form class="form-inline">
+            <button data-toggle="modal" data-target="#exampleModal" class="btn btn-success" 
+            type="button">Crear un nuevo post</button>
+            <div class="btn-group">
+                <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" 
+                aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-cog"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="#">Profile</a>
+                    <a class="dropdown-item" href="#">Accesibility</a>
+                    <a class="dropdown-item" href="#">Privacy and Data</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item text-danger" href="#">Log out</a>
+                </div>
+            </div>
+        </form>
+</nav>
+<!--Grid fotos-->
+<!--Pills fotos-->
+<content class="container-fluid">
+<div class="container d-flex justify-content-center"> 
+    <ul class="nav nav-pills mt-5" id="pills-tab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active btn btn-secondary" href="index.html" id="pills-home-tab" role="tab" aria-controls="pills-home" aria-selected="false">
+                <i class="fas fa-th fa-xs"></i>
+            </a>
+        </li>
+        <li class="nav-item ml-3">
+            <a class="nav-link btn btn-secondary" href="post.html" id="pills-profile-tab" role="tab" aria-controls="pills-profile" aria-selected="true">
+                <i class="fas fa-square fa-xs"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="tab-pane d-none d-flex justify-content-center my-4" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+    
+    <div class="card" style="width: 50%">
+        <div class="d-flex justify-content-between align-items-baseline bg-light px-2 pt-3">
+            <h4 class="ml-2 mr-2 card-title">My photos!</h4>
+            <p class="ml-2 mr-2">14/10</p>
+        </div>
+        <img src="https://images.pexels.com/photos/265946/pexels-photo-265946.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="..."/>
+        <div class="card-body">
+            <div class="d-flex">
+                <h5>204 Likes</h5>
+            </div>
+            <p class="card-text">
+                Revelando mis hermosas fotos
+            </p>
+        </div>
+    </div>
+</div>
+<div class="tab-pane d-none d-flex justify-content-center my-4" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+    <div class="card" style="width: 50%">
+        <div class="d-flex justify-content-between align-items-baseline bg-light px-2 pt-3">
+            <h4 class="ml-2 mr-2 card-title">Ya reveladas</h4>
+            <p class="ml-2 mr-2">08/10</p>
+        </div>
+        <img src="https://images.pexels.com/photos/3589898/pexels-photo-3589898.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="..."/>
+        <div class="card-body">
+            <div class="d-flex">
+                <h5>26985 Likes</h5>
+            </div>
+            <p class="card-text">
+                Salieron un poco desenfocadas!
+            </p>
+        </div>
+    </div>
+</div>
+<div class="tab-pane d-none d-flex justify-content-center my-4" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+    <div class="card" style="width: 50%">
+        <div class="d-flex justify-content-between align-items-baseline bg-light px-2 pt-3">
+            <h4 class="ml-2 mr-2 card-title">Estudiando!</h4>
+            <p class="ml-2 mr-2">06/10</p>
+        </div>
+        <img src="https://images.pexels.com/photos/8471784/pexels-photo-8471784.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="..."/>
+        <div class="card-body">
+            <div class="d-flex">
+                <h5>320 Likes</h5>
+            </div>
+            <p class="card-text">
+                Estudiando anatomia humana
+            </p>
+        </div>
+    </div>
+</div>
+<div class="tab-pane d-none d-flex justify-content-center my-4" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+    <div class="card" style="width: 50%">
+        <div class="d-flex justify-content-between align-items-baseline bg-light px-2 pt-3">
+            <h4 class="ml-2 mr-2 card-title">Mis stickers!</h4>
+            <p class="ml-2 mr-2">16/08</p>
+        </div>
+        <img src="https://images.pexels.com/photos/8369590/pexels-photo-8369590.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="..."/>
+        <div class="card-body">
+            <div class="d-flex">
+                <h5>425 Likes</h5>
+            </div>
+            <p class="card-text">
+                Esta es mi coleccion de stickers
+            </p>
+        </div>
+    </div>
+</div>
+<div class="tab-pane d-none d-flex justify-content-center my-4" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+    <div class="card" style="width: 50%">
+        <div class="d-flex justify-content-between align-items-baseline bg-light px-2 pt-3">
+            <h4 class="ml-2 mr-2 card-title">Album familiar</h4>
+            <p class="ml-2 mr-2">10/08</p>
+        </div>
+        <img src="https://images.pexels.com/photos/8848776/pexels-photo-8848776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="..."/>
+        <div class="card-body">
+            <div class="d-flex">
+                <h5>111 Likes</h5>
+            </div>
+            <p class="card-text">
+                Mirando fotos familiares
+            </p>
+        </div>
+    </div>
+</div>
+<div class="tab-pane d-none d-flex justify-content-center my-4" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+    <div class="card" style="width: 50%">
+        <div class="d-flex justify-content-between align-items-baseline bg-light px-2 pt-3">
+            <h4 class="ml-2 mr-2 card-title">Libros</h4>
+            <p class="ml-2 mr-2">25/07</p>
+        </div>
+        <img src="https://images.pexels.com/photos/4827502/pexels-photo-4827502.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="..."/>
+        <div class="card-body">
+            <div class="d-flex">
+                <h5>679 Likes</h5>
+            </div>
+            <p class="card-text">
+                La lectura es lo mas lindo
+            </p>
+        </div>
+    </div>
+</div>
+<div class="tab-pane d-none d-flex justify-content-center my-4" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+    <div class="card" style="width: 50%">
+        <div class="d-flex justify-content-between align-items-baseline bg-light px-2 pt-3">
+            <h4 class="ml-2 mr-2 card-title">My camera!</h4>
+            <p class="ml-2 mr-2">24/07</p>
+        </div>
+        <img src="https://images.pexels.com/photos/1393413/pexels-photo-1393413.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="..."/>
+        <div class="card-body">
+            <div class="d-flex">
+                <h5>300 Likes</h5>
+            </div>
+            <p class="card-text">
+                Capturadora de momentos
+            </p>
+        </div>
+    </div>
+</div>
+<div class="tab-pane d-none d-flex justify-content-center my-4" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+    <div class="card" style="width: 50%">
+        <div class="d-flex justify-content-between align-items-baseline bg-light px-2 pt-3">
+            <h4 class="ml-2 mr-2 card-title">Working</h4>
+            <p class="ml-2 mr-2">06/05</p>
+        </div>
+        <img src="https://images.pexels.com/photos/1777023/pexels-photo-1777023.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="..."/>
+        <div class="card-body">
+            <div class="d-flex">
+                <h5>642 Likes</h5>
+            </div>
+            <p class="card-text">
+                Subiendo el material
+            </p>
+        </div>
+    </div>
+</div>
+<div class="tab-pane d-none d-flex justify-content-center my-4" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+    <div class="card" style="width: 50%">
+        <div class="d-flex justify-content-between align-items-baseline bg-light px-2 pt-3">
+            <h4 class="ml-2 mr-2 card-title">Before..</h4>
+            <p class="ml-2 mr-2">04/04</p>
+        </div>
+        <img src="https://images.pexels.com/photos/8113899/pexels-photo-8113899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="..."/>
+        <div class="card-body">
+            <div class="d-flex">
+                <h5>180 Likes</h5>
+            </div>
+            <p class="card-text">
+                Mirando negativos
+            </p>
+        </div>
+    </div>
+</div>
+    <!--Modal-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Create a new post</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div><h6>Caption:</h6></div>
+                    <div class="form-group">
+                        <textarea class="form-control" id="message-text" placeholder="Add the caption of your post here"></textarea>
+                    </div>
+                    <button type="button" class="btn btn-light btn-sm">
+                        <i class="fas fa-camera"></i>
+                    </button>
+                    <button type="button" class="btn btn-light btn-sm">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Publish</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </content>
+<!--Script-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
